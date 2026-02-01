@@ -10,18 +10,21 @@
 ```sql
 CREATE TABLE users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    mentor_id INTEGER,
     role TEXT NOT NULL CHECK (role IN ('MENTOR','MENTEE')),
     name TEXT NOT NULL,
     created_at TEXT NOT NULL
 );
 ```
+---
+
 ## 2. Subjects
 ```sql
 CREATE TABLE subjects (
     id INTERGER PRIMARY KEY AUTOINCREMENT,
     subject TEXT NOT NULL
 )
-
+```
 ---
 
 ## 3. daily_planner
