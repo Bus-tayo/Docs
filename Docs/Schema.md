@@ -78,7 +78,7 @@ CREATE TABLE task_time_logs (
     started_at TEXT NOT NULL,
     ended_at TEXT,
     duration_seconds INTEGER,
-    source TEXT CHECK (source IN ('manual','timer')),
+    source TEXT CHECK (source IN ('MANUAL','TIMER')),
     created_at TEXT NOT NULL,
     FOREIGN KEY (task_id) REFERENCES tasks(id)
 );
