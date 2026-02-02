@@ -6,12 +6,11 @@
 
 ## ENUM 타입
 ```sql
--- ENUM 타입 정의
 CREATE TYPE user_role AS ENUM ('MENTOR', 'MENTEE');
 CREATE TYPE subject_type AS ENUM ('KOR', 'ENG', 'MATH', 'ETC');
 CREATE TYPE task_status AS ENUM ('TODO', 'WORKING', 'DONE');
 CREATE TYPE material_type AS ENUM ('COLUMN', 'PDF');
-CREATE TYPE log_source AS ENUM ('manual', 'timer');
+CREATE TYPE log_source AS ENUM ('MANUAL', 'TIMER');
 ```
 
 ## 1. users
